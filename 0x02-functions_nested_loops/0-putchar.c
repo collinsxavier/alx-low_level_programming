@@ -2,7 +2,7 @@
 int main (void)
 {
 	/*putchar task*/
-	char (_putchar)
-		printf("%d : char = _putchar");
+	char vars "_putchar"
+		printf("%d\n: char = _putchar");
 	return(0)
 }
