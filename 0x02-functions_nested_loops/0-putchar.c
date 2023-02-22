@@ -1,5 +1,9 @@
-#include "_putchar.h"
+#include "main.h"
 
+/**
+ * main - Check description
+ * Description: It prints the word _putche
+*/
 /**
   * main - Entry point
   *
@@ -17,5 +21,5 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 
-	return(0);
+	return (0);
 }
