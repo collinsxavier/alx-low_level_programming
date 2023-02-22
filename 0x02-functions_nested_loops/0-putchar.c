@@ -3,10 +3,7 @@
 /**
  * main - Check description
  * Description: It prints the word _putche
-*/
-/**
   * main - Entry point
-  *
   * Return: Always 0
   */
 int main(void)
