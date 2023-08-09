@@ -36,7 +36,9 @@ char **strtow(char *str)
 {
 	char **matrix, *tmp;
 
-	i = 0, k = 0, len = 0, words, c = 0, start, end;
+	int i = 0, k = 0, len = 0, c = 0;
+	int words, start, end;
+
 	while (*(str + len))
 	len++;
 	words = count_word(str);
@@ -57,7 +59,7 @@ char **strtow(char *str)
 				return (NULL);
 				while (start < end)
 				*tmp++ = str[start++];
-				+tmp++ '\0';
+				*tmp++ = '\0';
 				matrix[k] = tmp - c;
 				k++;
 				c = 0;
