@@ -5,7 +5,7 @@
  * alloc_grid - nested loop to make grid
  * @width: width input
  * @height: height input
- * Return: pointer to 2 dim. arrayi
+ * Return: pointer to 2 dim. array
  */
 
 int **alloc_grid(int width, int height)
@@ -18,9 +18,10 @@ int **alloc_grid(int width, int height)
 	mee = malloc(sizeof(int *) * height);
 	if (mee == NULL)
 	return (NULL);
-	for (x = 0; x < height; x++)
 	{
-		mee[x] = malloc(sizeof(int) * width);
+	for (x = 0; x < height; x++)
+	}
+	{	mee[x] = malloc(sizeof(int) * width);
 		if (mee[x] == NULL)
 		{
 			for (; x >= 0; x--)
@@ -29,11 +30,11 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-		for (x = 0; x < height; x++)
+
+	for (x = 0; x < height; x++)
 	{
-		for (y = 0; y < width; y++;
+		for (y = 0; y < width; y++)
 		mee[x][y] = 0;
 		return (mee);
 	}
 }
-
